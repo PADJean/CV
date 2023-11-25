@@ -973,7 +973,7 @@ section .container {
   padding: 15px 0 0 0;
 }
 
-.swiper-slide {
+.swiper-slide img {
   height : 463;
   width : 100%;
 }
@@ -982,7 +982,7 @@ section .container {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
   }
-  .swiper-slide {
+  .swiper-slide img {
     height : 231.5;
   }
 }
