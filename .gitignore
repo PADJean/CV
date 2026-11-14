@@ -1,0 +1,18 @@
+# Documents personnels sources (rapports, CV, notes) : jamais dans le dépôt
+Docs d'infos pour Claude/
+
+# Vidéos non référencées par le site (558 Mo et 25 Mo, au-delà des limites GitHub)
+*.mp4
+
+# Originaux des images avant optimisation
+_originals/
+
+Thumbs.db
+desktop.ini
+
+# Briefs et rapports des sessions de travail
+_brief/
+
+# Fichiers retirés du site (non utilisés), conservés en local
+_unused/
+test/

@@ -1,0 +1,176 @@
+/* Pages détail du portfolio (ouvertes dans GLightbox) : complément de style.css */
+
+.portfolio-details .portfolio-info.pd-scroll {
+  overflow-y: visible;
+  height: auto;
+}
+
+/* Bureau : visuel en haut, texte dessous sur toute la largeur (la colonne de
+   droite était trop étroite, et vide quand il n'y a pas d'image) */
+@media (min-width: 992px) {
+  .portfolio-details .container {
+    max-width: 960px;
+    padding-bottom: 90px; /* dégage le bandeau fixe « Fait par » */
+  }
+  .portfolio-details .row > .col-lg-8,
+  .portfolio-details .row > .col-lg-4 {
+    width: 100%;
+  }
+  .portfolio-details .portfolio-info {
+    padding-top: 28px;
+  }
+}
+
+.portfolio-details .portfolio-info h3 {
+  color: #18d26e;
+  margin-top: 28px;
+}
+
+.portfolio-details .portfolio-info h3:first-child {
+  margin-top: 0;
+}
+
+.portfolio-details .portfolio-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 22px 0 10px;
+}
+
+.portfolio-details .portfolio-info ul.pd-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.portfolio-details .portfolio-info ul.pd-list li+li {
+  margin-top: 6px;
+}
+
+.portfolio-details .portfolio-info .pd-intro {
+  padding-top: 0;
+  margin-bottom: 18px;
+}
+
+.portfolio-details .portfolio-info .pd-results {
+  background: rgba(24, 210, 110, 0.08);
+  border-left: 3px solid #18d26e;
+  padding: 12px 16px 12px 18px;
+  margin-bottom: 8px;
+}
+
+.portfolio-details .portfolio-info .pd-results li+li {
+  margin-top: 8px;
+}
+
+.portfolio-details .portfolio-info .pd-retenu {
+  font-style: italic;
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+  padding: 4px 0 4px 16px;
+  margin-top: 8px;
+}
+
+.portfolio-details .portfolio-info .pd-note {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.pd-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.portfolio-details .portfolio-info .pd-chips li {
+  margin: 0;
+  padding: 3px 12px;
+  border: 1px solid #18d26e;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Bloc d'en-tête des projets sans visuel (à la place du slider) */
+.pd-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 260px;
+  padding: 32px;
+  border: 1px solid rgba(24, 210, 110, 0.45);
+  border-radius: 6px;
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.16), rgba(24, 210, 110, 0.02) 70%), #0b0b0b;
+}
+
+.pd-hero > i {
+  flex: 0 0 auto;
+  font-size: 96px;
+  line-height: 1;
+  color: #18d26e;
+}
+
+.pd-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.pd-hero-role {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.pd-hero-dates {
+  font-size: 15px;
+  color: #18d26e;
+}
+
+.pd-hero-dates i {
+  margin-right: 6px;
+}
+
+.pd-hero-place {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+@media (max-width: 991px) {
+  .portfolio-details .portfolio-info.pd-scroll {
+    height: auto;
+    overflow-y: visible;
+  }
+  .pd-hero {
+    min-height: 0;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .pd-hero > i {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pd-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .pd-hero > i {
+    font-size: 52px;
+  }
+}
+
+/* Lightbox des pages détail : fond sombre (GLightbox met du blanc par défaut,
+   visible tant que la page n'est pas chargée ou si elle est transparente) */
+html {
+  background-color: #040404;
+  color-scheme: dark;
+}
+
+.gslide-external {
+  background: #040404;
+}
