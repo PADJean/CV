@@ -16,3 +16,6 @@ _brief/
 # Fichiers retirés du site (non utilisés), conservés en local
 _unused/
 test/
+
+# Photos personnelles (variantes), jamais dans le dépôt
+_photo/
