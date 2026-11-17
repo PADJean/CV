@@ -1304,3 +1304,44 @@ html.pd-modal-open {
     border-radius: 0;
   }
 }
+
+/* Section CV : sous-titres, « ce que j'en retiens » et bouton vers la page projet */
+.resume .resume-item .resume-sub {
+  margin: 14px 0 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.resume .resume-item .resume-retenu {
+  margin-top: 12px;
+  padding: 4px 0 4px 14px;
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+  font-style: italic;
+}
+
+.resume .resume-item .resume-btn-wrap {
+  margin: 14px 0 0;
+}
+
+.resume .resume-item .resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  border: 1px solid #18d26e;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #18d26e;
+  transition: background 0.2s, color 0.2s;
+}
+
+.resume .resume-item .resume-btn:hover,
+.resume .resume-item .resume-btn:focus-visible {
+  background: #18d26e;
+  color: #040404;
+}

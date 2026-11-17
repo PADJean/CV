@@ -276,6 +276,14 @@
       if (e.key === 'Escape' && !modal.hidden) closeModal()
     })
 
+    // Boutons « Voir le projet » de la section CV : même modale (le lien reste valable sans JS)
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.resume-btn')
+      if (!btn) return
+      e.preventDefault()
+      openModal(btn.href, btn)
+    })
+
     // Whole thumbnail is clickable (also on touch); the link icon stays keyboard accessible
     select('.portfolio-container', true).forEach((container) => {
       container.addEventListener('click', (e) => {
